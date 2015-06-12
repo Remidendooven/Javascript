@@ -1,0 +1,22 @@
+<script>
+console.log("toto");
+
+var array = [1,2,3,4];
+var average = function (array){
+
+var length = array.length;
+
+var sum = array.reduce( function (accu, item, index, array){
+	return accu + item;
+	}, 0);
+
+return sum / length;
+
+}
+
+var res = average(array)
+console.log(res);
+
+
+
+</script>
