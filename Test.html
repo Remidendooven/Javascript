@@ -34,6 +34,9 @@ function humain (nom){
 
 	this.nom=nom;//attribut
 }
+humain.prototype.hello=function(){
+	console.log("Hello" + this.nom)
+}
 
 var h = new humain("Rémi");//instanciation
 </script>
