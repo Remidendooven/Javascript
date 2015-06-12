@@ -1,0 +1,82 @@
+/*modification de tags*/
+html
+{background-color:#336699; /* on peut noter rvb */
+ box-sizing : border-box;}
+
+*, *:before, *after {box-sizing : inherit;}/* PErmet de changer la largeur de la box order*/
+
+body { font-family: Helvetica, arial, sans-serif;
+		color : black ; /* les liens et formulaire n'hérite pas de la couleur du body*/
+		max-width: 780px; /* On ne veux pas que le body aie plus de 780 pixel*/
+		background-color : #FFF;
+		margin: 0 auto; /*0 en et en bas, gauche et droite auto*/ /*margin on peut être utilisé pour centrer et utilisé des valeur négatives*/
+		padding:20px;
+	 }/* Si on ne peut pas helvetica, le navigateur essaie arial sinon il utilise la générique  */
+
+a   {
+		color : darkred;
+ 	}
+
+ a:hover { color : yellow;} /* Quand on passe la souris dessus le lien change de couleur*/
+ a:focus{ color : red;} /* Quand on fait une tabulation sur le lien*/
+ a:visited {color : purple;}/* Lorsuqe l'on a déjà visité le lien*/
+
+
+/*a{color : inherit ;}*/ /*les liens héritent de la couleur du body*/
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight : normal;
+	text-transform: uppercase; /* Mettre en majuscule*/
+}
+
+/* Modification des éléments du design*/
+.main-header{
+	border-bottom : 10px #333 solid; /*style de border : solid, dotted, dash, groove*/
+	background color: #eee;
+	padding: 20px;
+}
+
+.portrait {
+	width: 200px;
+	height:200px;
+	border-radius:50%;
+	overflow: hidden; /*overflow : scroll*/
+	transition: all .3s; /*si on le mets que dans le hover il utilise la trasition que dans un sens et pas dans l'autre*/
+}
+
+.portrait:hover{
+	transform: skew(45deg) translateX(200px) translateY(200px);
+}
+
+.main-nav a {
+	text-decoration: none;
+	color : hotpink;
+}
+
+.main-nav u1 {
+	list-style-type: none;
+	padding :0;
+	margin: 0;
+	text-transform: uppercase;
+}
+.main-nav li{
+	display: inline-block;
+	background-color: #FFF;
+	padding: 10px;
+}
+.main-nav li:hover{
+	background-color:#333; 
+}
+.main-nav li:before{
+	content: ">";
+	font-size:20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.main-nav li:hover:before{
+	color: yellow;
+}
+
+
+
